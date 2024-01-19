@@ -39,7 +39,7 @@ class Record:
     def remove_phone(self, number):
         self.phones.remove(Phone(number))
     
-    ##   Функція зміни номеру, з попередньою валідацією нового номера та вийнятком, якщо не було знайдено старий номер у списку
+    ##   Функція зміни номеру
     def edit_phone(self, old_number, new_number):
         self.phones[self.phones.index(Phone(old_number))] = Phone(new_number)
 
